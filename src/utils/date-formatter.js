@@ -1,5 +1,6 @@
 export const dateFormatter = (dateString) => {
   const dateTimeFormat = new Intl.DateTimeFormat('en-CA', {
+    // @ts-ignore
     dateStyle: 'short',
     timeStyle: 'medium',
   });
