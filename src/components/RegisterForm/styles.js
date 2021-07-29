@@ -1,7 +1,10 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${({ _theme }) => css``}
+  ${({
+    // @ts-ignore
+    _theme,
+  }) => css``}
 `;
 
 export const RegisterForm = styled.form`
@@ -18,7 +21,11 @@ export const RegisterForm = styled.form`
 `;
 
 export const FormInfoMessage = styled.p`
-  ${({ theme, messageType }) => css`
+  ${({
+    theme,
+    // @ts-ignore
+    messageType,
+  }) => css`
     background: ${theme.colors[messageType]};
     margin-top: ${theme.spacings.large};
     padding: ${theme.spacings.small};

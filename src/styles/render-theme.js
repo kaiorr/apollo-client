@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ApolloProvider } from '@apollo/client';
 import { render } from '@testing-library/react';
 import { client } from 'graphql/apollo/client';

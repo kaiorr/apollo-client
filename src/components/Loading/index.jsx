@@ -12,7 +12,10 @@ const DefaultLoading = () => {
 
 export const Loading = ({ children, loading = false }) => {
   return loading ? (
-    <Styled.Container isLoading={loading}>
+    <Styled.Container
+      // @ts-ignore
+      isLoading={loading}
+    >
       {children ? children : <DefaultLoading />}
     </Styled.Container>
   ) : null;
